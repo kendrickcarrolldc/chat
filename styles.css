@@ -1,0 +1,103 @@
+body {
+	font-family: sans-serif;
+}
+
+#me {
+	box-sizing: border-box;
+	float: right;
+	width: 50%;
+}
+
+#mytext {
+	min-height: 30px;
+	max-width: 60px;
+	float: none;
+	padding: 15px;
+	background-color: white;
+	position: relative;
+/*	box-sizing: border-box;*/
+	margin: 10px;
+	display: flex;
+	
+/*	flex-direction: start;*/
+	flex-wrap: nowrap;
+	
+}
+
+
+#otherText {
+	min-height: 30px;
+	max-width: 60px;
+	
+	float: none;
+	padding: 15px;
+	background-color: goldenrod;
+
+/*	box-sizing: border-box;*/
+	margin: 10px;
+	margin-left: 70%;
+	display:block;
+	
+/*	flex-direction: row;*/
+/*	flex-wrap: nowrap;*/
+	
+}
+
+.spanning {
+	width: 100%;
+}
+
+#friendtext {
+	min-height: 30px;
+	width: 80px;
+	float: none;
+	padding: 15px;
+	background-color: white;
+	
+}
+
+header {
+	height: 60px;
+	background-color: goldenrod;
+	padding-top: 5px;
+	padding-left:15px;
+	
+	
+}
+
+#friend {
+	box-sizing: border-box;
+	width: 50%;
+	border-right: 5px solid white;
+	
+}
+
+section {
+	height: 700px;
+	background-color: lightgrey;
+	box-sizing: border-box;
+	
+}
+
+.texting {
+	align-content: center;
+	padding-left: 5px;
+	background-color: goldenrod;
+	height: 100px;
+	
+}
+
+input {
+	margin-top: 20px;
+	width: 80%;
+	height:50px;
+	
+}
+
+button {
+	border-radius: 6px;
+	width: 10%;
+	
+	padding-top: 
+}
+
