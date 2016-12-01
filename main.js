@@ -10,6 +10,10 @@ var myInput = inputs[0];
 var mySection = sections[0];
 var myText = document.getElementById("mytext");
 
+var friendInput = inputs[1];
+var friendSection = sections[1];
+var friendText = document.getElementById("mytext");
+
 
 sendMe.addEventListener('click', function(myText, otherSection) {
 	
@@ -45,7 +49,33 @@ sendMe.addEventListener('click', function(myText, otherSection) {
 
 
 
-sendFriend.addEventListener('click', function() {
+sendFriend.addEventListener('click', function(otherSection2) {
+	
+	var friendTextDiv = document.createElement('content');
+	var friendSpan = document.createElement('span');
+	friendSpan.className = 'spanning';
+	
+	friendTextDiv.setAttribute("id", "mytext");
+	friendTextDiv.textContent = friendInput.value
+	friendTextDiv.appendChild(friendSpan);
+	friendSection.appendChild(friendTextDiv);
+	console.log(friendSection.lastChild);
+	
+	if (friendSection.hasChildNodes) {
+	otherSection2 = sections[0]
+	var otherText2 =  document.createElement('content');
+	var otherSpan2 = document.createElement('span');
+	otherSpan2.className = 'spanning';
+	otherText2.setAttribute("id", "otherText");	
+	otherText2.style.float = "right";
+	
+	otherText2.textContent = friendSection.lastChild.textContent;
+	console.log(otherText2);
+	otherText2.appendChild(otherSpan2);	
+	otherSection2.appendChild(otherText2);
+	}
+	
+	friendInput.value = " ";
 
 	
 	
