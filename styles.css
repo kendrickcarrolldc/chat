@@ -74,8 +74,9 @@ header {
 section {
 	padding: 10px;
 	height: inherit;
-	background-color: lightgrey;
+/*	background-color: lightgrey;*/
 	box-sizing: border-box;
+	background-image: url("dark_embroidery.png");
 }
 
 .texting {
